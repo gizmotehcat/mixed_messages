@@ -1,20 +1,19 @@
-//mixed messages object factory 
+//Mixed messages object
 const mixedMessages = {
     
-    //3 topics of fun messages
+    //Fun messages stored inside an object ready for iteration.
     happy: ["have a wonderful day.", "have a great week.", "rise above it"],
     uplifting: ["achieve all your dreams.", "have a better day than yesterday.", "realize your true potential."],
     cruel: ["walk into a lamp post.", "stub your toe.", "trip up the curb, because you suck!"],
-
-    //topic starter
+    //Message starter
     messStarter: ["I believe you will ", "I hope you ", " I sincerely wish you "],
    
-    //random number generator method for topic
+    //Random number generator method 
     randNumGen () {
         return Math.floor(Math.random()*3);
     },
 
-    //message build method
+    //Returns a random concatenated message method
     build () {
         switch (this.randNumGen()) {
             case 0:
