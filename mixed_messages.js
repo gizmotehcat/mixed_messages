@@ -18,16 +18,12 @@ const mixedMessages = {
         switch (this.randNumGen()) {
             case 0:
                 return this.messStarter[this.randNumGen()] + this.happy[this.randNumGen()];
-                break;
             case 1:
                 return this.messStarter[this.randNumGen()] + this.uplifting[this.randNumGen()];
-                break;
             case 2:
-                return this.messStarter[this.randNumGen()] + this.cruel[this.randNumGen()];
-                break;
+                return this.messStarter[this.randNumGen()] + this.cruel[this.randNumGen()];            
             default:
-                return "if this is broken then I strongly believe the universe may have ceased to exist as we know it";
-                break;
+                return "if this is broken then I strongly believe the universe may have ceased to exist as we know it";             
         }
     },
     //message output method
